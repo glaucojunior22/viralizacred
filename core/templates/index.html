@@ -1,0 +1,5 @@
+<h1>LISTA DE PARCELAS</h1>
+
+{% for parcela in parcelas %}
+    <span>{{ parcela.nome }} - {{ parcela.cpf }}</span>
+{% endfor %}
