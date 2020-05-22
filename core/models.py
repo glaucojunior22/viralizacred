@@ -2,6 +2,8 @@ from django.db import models
 
 
 class Parcela(models.Model):
+    banco = models.CharField(max_length=255)
+    tipo = models.IntegerField()
     posto = models.CharField(max_length=2)
     nome = models.CharField(max_length=255)
     numero_ordem = models.CharField(max_length=100)
